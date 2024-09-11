@@ -73,6 +73,16 @@ public class MainActivity extends AppCompatActivity {
         final View view = getLayoutInflater().inflate(R.layout.card, null);
 
         TextView nameView = view.findViewById(R.id.name);
+        Button delete = view.findViewById(R.id.remove);
+        nameView.setText(name);
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                layout.removeView(view);
+            }
+        });
+        layout.addView(view);
+
 
     }
 }

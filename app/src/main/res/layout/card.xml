@@ -28,13 +28,15 @@
                 android:text="Naziv"
                 android:textColor="#2196F3"
                 android:textFontWeight="1000"
+                android:layout_margin="10dp"
                 android:textSize="30dp"/>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/remove"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:layout_margin="10dp"
                 android:text="Izbriši"
                 />
 
